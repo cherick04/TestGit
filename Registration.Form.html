@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	
+	<title>Wher2go - Registration Form</title>
+	
+	<head>
+		<title>HTML DEMO</title>
+		<meta name="Erick C." content="Registration Form">
+		<style type="text/css">
+			
+			/*Position and font size for header 2 (h2)*/
+			h2{position:relative; left: 115px; font-size:2em; }
+			
+			/*Position for the text inputs*/
+			#first_name, #last_name, #email_address, #password, #password_confirmation
+				{position:absolute; left:180px}
+			
+			/*Aligning the labels*/
+			label{position:absolute; right:620px}
+
+		</style>
+	</head>
+
+	<body>
+		<h2><i>Sign up now!</i></h2>
+
+		<!-- Input type components -->
+		<form action="NODE.JS PROGRAM PATH GOES HERE!!!" method="post">
+
+			<label for="first_name">First Name:</label>
+			<input type="text" id="first_name" name= "first_name" placeholder="Enter your first name" required><br><br>
+
+			<label for="last_name">Last Name:</label>
+			<input type="text" id="last_name" name= "last_name" placeholder="Enter your last name" required><br><br>
+
+			<label for="email_address">E-mail:</label>
+			<input type="text" id="email_address" name= "email_address" placeholder="Enter your e-mail address" required><br><br>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name= "password" placeholder="Enter your Password" required><br><br>
+
+			<label for="password_confirmation">Password Confirmation:</label>
+			<input type="password" id="password_confirmation" name= "password_confirmation" placeholder="Confirm Password" required><br><br>
+
+			<!-- SUMIT BUTTON -->
+			<input style="position:relative; left:135px; top:10px; font-size:1em; font-style:italic" type="submit" value="Sign up!">
+
+		</form>
+
+	</body>
