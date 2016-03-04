@@ -1,0 +1,23 @@
+h2{
+	position:relative; 
+	left: 115px; 
+	font-size:2em; 
+}
+
+#first_name, #last_name, #email_address, #password, #password_confirmation{
+	position:absolute; 
+	left:180px
+}
+
+label{
+	position:absolute;
+	right:620px
+}
+
+#submit {
+	position:relative; 
+	left:135px; 
+	top:10px; 
+	font-size:1em; 
+	font-style:italic
+}
