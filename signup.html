@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "stylesheet" type = "text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<title>Sign Up</title>
+		<meta content="noindex, nofollow" name="robots">
+		<link href="SignUp.css" rel="stylesheet">
+		<script src="SignUp.js"></script>
+	</head>
+		<body>
+			<div id="form" class="container">
+			<p id="head"></p>
+			<!-- This segment displays the validation rule -->
+			<h2>Please Sign Up</h2>
+			<!-- Form starts from here -->
+			<form onsubmit='return formValidation()'>
+				<label>Username(4-16 characters):</label>
+				<input id='username' type='text'></input>
+				<p id="p1"></p>
+				<!-- This segment displays the validation rule for user name -->
+				<label>Password :</label>
+				<input id='pwd' type='password'>
+				<p id="p2"></p>
+				<!-- This segment displays the validation rule for password confirmation  -->
+				<label>Retype Password :</label>
+				<input id='re_pwd' type='password'>
+				<p id="p3"></p>
+				<!-- This segment displays the validation rule for password -->
+				<label>Email:</label>
+				<input id='email' type='text'></input>
+				<p id="p4"></p>
+				<!-- This segment displays the validation rule for email -->
+				<label>Zip Code:</label>
+				<input id='zip' type='text'>
+				<p id="p6"></p>
+				<!-- This segment displays the validation rule for zip -->
+				<input id="submit" type='submit' value='SIGN UP'>
+				<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+				</fb:login-button>
+				<div id="status"></div>
+			</form>
+			</div>
+			<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+			<script src="FB_login.js"></script>
+		</body>
+
+</html>
